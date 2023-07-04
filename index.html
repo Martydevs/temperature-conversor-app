@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=exo-2:700|heebo:400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Inicio</title>
+  </head>
+  <body class="centered">
+    <main class="centered">
+      <header class="centered">
+        <h1>Aplicación de JavaScript</h1>
+        <p>Conversora de Temperatura</p>
+      </header>
+
+      <div class="outputs-container">
+        <p>Fahrenheit: <span id="fahrenheit-output"></span></p>
+        <p>Kelvin: <span id="kelvin-output"></span></p>
+      </div>
+
+      <section class="centered">
+        <label for="user-input" class="centered">
+          Ingresa temperatura en Celsius:
+          <input
+            autocomplete="off"
+            name="user-input"
+            id="user-input"
+            minlength="1"
+            maxlength="3"
+          />
+        </label>
+        <div class="buttons-container centered-horizontal">
+          <button class="hover" id="temperature-convert">Convertir</button>
+          <button class="hover" id="temperature-clean">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </section>
+      
+    </main>
+    <script src="./main.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/73843a4163.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

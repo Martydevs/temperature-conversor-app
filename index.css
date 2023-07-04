@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  color: #fff;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+main {
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 60ch;
+}
+
+/* user styles */
+
+header {
+  width: auto;
+  display: grid;
+  place-items: center;
+  margin: 1rem 0 1rem 0;
+}
+
+h1 {
+  font-family: "Exo 2", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: yellow;
+  text-decoration: underline;
+}
+
+p,
+label {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "heebo", sans-serif;
+}
+
+form > label,
+input,
+.buttons-container {
+  display: block;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+span {
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+  font-family: "heebo", sans-serif;
+  word-spacing: 0.8rem;
+  color: #fff;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3cac;
+  color: yellow;
+  text-align: center;
+}
+
+.buttons-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-family: "heebo", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+  border: solid 2px #fff;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hover:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  background-color: #000;
+}
+
+#temperature-clean:hover {
+  color: red;
+}
+
+#temperature-convert:hover {
+  color: yellow;
+}
+
+.outputs-container {
+  width: 30%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  color: yellow;
+}
+
+.centered-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
